@@ -1,0 +1,65 @@
+@startuml
+
+rectangle Infrastructur #LightGreen {
+object Nøglepartnere #White {
+    Web booking (bookingsystem)
+    Facebook som kanal til visning af udvalg og kundekontakt
+}
+object Nøgleaktiviteter #White {
+    Piercer
+    Salg af piercingsmykker
+    Vejledning om piercing
+}
+object nøgleressourcer #White {
+    Butik i Odense siden marts 2003
+    Piercing erfaring siden 1999
+    Hjemmeside og bookingsystem
+    Faglig viden om sterilisering og behandling af instrumenter
+    Lager/udvalg af piercingsmykker
+}   
+}
+
+rectangle Værditilbud #LightYellow {
+object ValueProposition #White {
+    Høj kvalitet i både piercing og smykker
+    Professionelt udførte piercinger i rene omgivelser
+    Grundig vejledning om efterpleje
+    Forskellige piercing for bedre resultat
+}
+}
+
+rectangle Kunder #f47373 {
+object Kunderelationer #White {
+    Personlig betjening
+    hurtig kundekontakt via beskeder
+    Individuel vejledning før og efter piercing
+    Selvbetjent booking kombineret med personlig service
+}
+object Kanaler #White {
+    Telefonisk kontakt
+    Hjemmesiden
+    Facebook
+    Instagram
+    Butiken
+}
+object Kundesegmenter #White {
+    Privatkunder, der ønsker at få piercing
+    Dem der ønsker at købe smykker
+    Kunder i Odense, Fyn og hele Danmark
+    Forskellige aldersgrupper, afhængigt af piercingtype
+}
+}
+
+rectangle Finansiel #LightBlue {
+object Omkosningsstruktur #White {
+    Udstyr og instrumenter til piercing og sterilisering
+    Indkøb af piercingsmykker
+    Hjemmeside og bookingløsning
+}
+object Indtægtsstrømme #White {
+    Indtægter fra piercinger
+    Indtægter fra salg af piercingsmykker i butikken og via Facebook
+}
+}
+
+@enduml
