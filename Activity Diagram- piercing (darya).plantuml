@@ -1,0 +1,38 @@
+@startuml
+|Kunde|
+start
+:Ønsker en piercing;
+:Gå til bookingside;
+:Vælg piercingtype;
+:Vælg dato og tidspunkt;
+
+|Bookingsystem|
+:Tjek ledige tider;
+
+if (Er der en ledig tid?) then (ja)
+  |Kunde|
+  :Indtast kontaktoplysninger;
+  :Bekræft booking;
+
+  |Bookingsystem|
+  :Opret booking;
+  :Send bekræftelse til kunden;
+  :Send bookinginformation til piercer;
+
+  |Piercer|
+  :Modtag booking;
+  :Forbered aftalen;
+
+  |Piercer|
+  :kunde mød op i butikken;
+  stop
+
+else (nej)
+  |Bookingsystem|
+  :Vis at der ikke er ledige tider;
+
+  |Kunde|
+  :Vælg en anden tid eller afslut;
+  stop
+endif
+@enduml
